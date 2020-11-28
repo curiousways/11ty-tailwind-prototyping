@@ -48,6 +48,16 @@ module.exports = config => {
 
 `"start": "npx eleventy --serve"`
 
+Depnendencies
+
+```
+  "@11ty/eleventy": "^0.11.1",
+  "autoprefixer": "^10.0.4",
+  "postcss": "^8.1.10",
+  "postcss-cli": "^7.1.1",
+  "tailwindcss": "^2.0.1"
+```
+
 4. Install 11ty
 
 `npm install @11ty/eleventy`
@@ -206,7 +216,46 @@ Add to `package.json`
 
 `npm run tailwind`
 
-13. Install TailwindUI
+13. Tailwind build (with watch)
+
+(https://css-tricks.com/eleventy-starter-with-tailwind-css-alpine-js/)[An Eleventy Starter with Tailwind CSS and Alpine.js]
+
+Add this to `.eleventy.js`
+
+```
+module.exports = config => {
+  
+  config.setUseGitIgnore(false);
+  config.addWatchTarget("./src/_tmp/style.css");
+  config.addPassthroughCopy({ "./src/_tmp/style.css": "./style.css" });
+  config.addPassthroughCopy('./src/images/');
+
+  return {
+    dir: {
+      input: 'src',
+      output: 'dist' 
+    }
+  };
+};
+```
+
+Add this to `.postcss.config.js`
+
+```
+module.exports = {
+  plugins: [
+    require(`tailwindcss`)(`./tailwind.config.js`)
+  ],
+};
+```
+
+Add his to `package.json`
+
+```
+  "start": "eleventy --serve & postcss src/css/tailwind.css --o src/_tmp/style.css --watch",
+```
+
+14. Install TailwindUI
 
 Add Inter font
 
