@@ -1,7 +1,8 @@
 # 11ty Tailwind Prototyping
 
-1. Add .gitignore
+1. Add .gitignore + .eleventyignore
 
+touch `.gitignore`
 ```
 # Misc
 .nova
@@ -19,6 +20,12 @@ Thumbs.db
 node_modules
 dist
 src/_includes/css
+```
+
+`touch .eleventyignore`
+
+```
+node_modules
 ```
 
 2. Create 11ty config file
@@ -58,6 +65,7 @@ module.exports = config => {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/style.css?v=1.0">
     <title>{{ site.name }}</title>
   </head>
   <body>
@@ -69,6 +77,8 @@ module.exports = config => {
   </body>
 </html>
 ```
+
+`touch src/style.css`
 
 `touch home.njk`
 
@@ -159,3 +169,51 @@ config.addPassthroughCopy('./src/images/');
 }
 ```
 
+9. Install Tailwind & PostCSS
+
+`npm install tailwindcss postcss autoprefixer`
+
+`touch postcss.config.js`
+
+```
+module.exports = {
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ]
+}
+```
+
+10. Create Tailwind config file
+
+`npx tailwindcss init`
+
+11. Include Tailwind in CSS
+
+```
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+```
+
+12. Tailwind build (manual)
+
+Add to `package.json`
+
+`"tailwind": "npx tailwindcss build src/style.css -o dist/style.css"`
+
+`npm run tailwind`
+
+13. Install TailwindUI
+
+Add Inter font
+
+`<link rel="stylesheet" href="https://rsms.me/inter/inter.css">`
+
+Add AlpineJS
+
+https://github.com/alpinejs/alpine/
+
+`<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>`
