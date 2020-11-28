@@ -1,0 +1,23 @@
+{
+  "name": "11ty-tailwind-prototyping",
+  "version": "1.0.0",
+  "description": "1. Add .gitignore",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://curiousways@github.com/curiousways/11ty-tailwind-prototyping.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curiousways/11ty-tailwind-prototyping/issues"
+  },
+  "homepage": "https://github.com/curiousways/11ty-tailwind-prototyping#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
