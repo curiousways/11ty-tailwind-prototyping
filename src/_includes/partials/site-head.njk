@@ -1,12 +1,17 @@
-<header>
-  <a href="/">
-    {{ site.name }}
-  </a>
-  <ul>
+<header class="flex justify-between items-center bg-yellow-100 mx-auto">
+  <div>
+    <a href="/">
+      {% include "partials/brand.svg" %}
+    </a>
+  </div>
+  <ul class="flex space-x-10">
     {% for item in navigation.items %}
     <li>
       <a href="{{ item.url }}">{{ item.text }}</a>
     </li>
     {% endfor %}
   </ul>
+  <div>
+    <a href="/contact">Contact</a>
+  </div>
 </header>

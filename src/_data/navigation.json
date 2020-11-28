@@ -1,12 +1,36 @@
 {
   "items": [
     {
-      "text": "Home",
+      "text": "Homessss",
       "url": "/"
     },
     {
-      "text": "About",
-      "url": "/about-us/"
+      "text": "Our Expertise",
+      "url": "/our-expertise/"
+    },
+    {
+      "text": "Where we operate",
+      "url": "/where-we-operate"
+    },
+    {
+      "text": "About us",
+      "url": "/about-us"
+    },
+    {
+      "text": "Our Clients",
+      "url": "/our-clients"
+    },
+    {
+      "text": "Careers",
+      "url": "/careers"
+    },
+    {
+      "text": "Covid-19",
+      "url": "covid-19"
+    },
+    {
+      "text": "Responsibility",
+      "url": "responsibility"
     }
   ]
 }

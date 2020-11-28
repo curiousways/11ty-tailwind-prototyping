@@ -8,10 +8,12 @@
     <title>{{ site.name }}</title>
   </head>
   <body>
-    {% include "partials/site-head.njk" %}
-    <main>
-      {% block content %}{% endblock %}
-    </main>
-    {% include "partials/site-foot.njk" %}
+    <div class="container mx-auto border-l border-r border-b border-t-8 border-black mx-10 mt-5 p-5">
+      {% include "partials/site-head.njk" %}
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+      {% include "partials/site-foot.njk" %}
+    </div>
   </body>
 </html>
