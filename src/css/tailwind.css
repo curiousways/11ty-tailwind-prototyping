@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bust--full {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/*------------------------------------*\
+    BORDERS
+\*------------------------------------*/
+
+html:before,
+html:after,
+body:before,
+body:after {
+  @apply bg-idg-blue fixed block;
+  content: " ";
+  z-index: 5;
+}
+
+html:before{
+  height: 10px;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+}
+
+html:after{
+  width: 1px;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+}
+
+body:before{
+  height: 1px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+}
+
+body:after{
+  width: 1px;
+  top: 30px;
+  bottom: 30px;
+  left: 30px;
+}
