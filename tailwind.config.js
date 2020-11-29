@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      borderRadius: {
+        '4xl': '3rem',
+      }
     },
   },
   variants: {
