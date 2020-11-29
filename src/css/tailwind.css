@@ -7,6 +7,41 @@
   margin-right: calc(50% - 50vw);
 }
 
+.btn {
+  @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-white bg-idg-blue hover:bg-idg-black;
+}
+
+.arrow--left {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid black;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  @apply absolute z-10;
+
+}
+
+.arrow--right {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-right: 40px solid black;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  @apply absolute z-10;
+
+}
+
+
 /*------------------------------------*\
     BORDERS
 \*------------------------------------*/

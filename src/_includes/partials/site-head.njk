@@ -1,17 +1,23 @@
-<header class="flex justify-between items-center bg-yellow-100 sticky mx-auto container py-6 px-12 xxl:px-0" style="top: 40px">
-  <div>
-    <a href="/">
-      {% include "partials/brand.svg" %}
-    </a>
+<header class="bg-yellow-100 z-10 sticky py-6" style="top: 40px; margin-right: 31px; margin-left: 31px;">
+
+  <div class="flex justify-between items-center mx-auto container px-12 xxl:px-0">
+
+    <div>
+      <a href="/">
+        {% include "partials/brand.svg" %}
+      </a>
+    </div>
+    <ul class="flex space-x-10">
+      {% for item in navigation.items %}
+      <li>
+        <a href="{{ item.url }}">{{ item.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div>
+      <a href="/contact">Contact</a>
+    </div>
+
   </div>
-  <ul class="flex space-x-10">
-    {% for item in navigation.items %}
-    <li>
-      <a href="{{ item.url }}">{{ item.text }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  <div>
-    <a href="/contact">Contact</a>
-  </div>
+
 </header>
