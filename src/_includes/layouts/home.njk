@@ -1,6 +1,16 @@
 {% extends "layouts/base.njk" %} 
 
 {% block content %}
+
+  {% include "partials/cta-2.njk" %}
+
+  {% include "partials/cta-3.njk" %}
+
+  {% include "partials/cta.njk" %}
+
+  {% include "partials/cta-2.njk" %}
+
+
 <article>
   <h1>{{ title }}</h1>
   {{ content | safe }}
