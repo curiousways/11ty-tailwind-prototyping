@@ -1,14 +1,29 @@
-<div class="bg-green-200">
-  <div class="bg-yellow-500 container mx-auto px-12 xxl:px-0 py-12 lg:py-24 lg:flex lg:items-center lg:justify-between">
-    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
-      <span class="block">Want to get started?</span>
-    </h2>
+<div class="bg-idg-blue py-10">
+  <div class="container mx-auto px-12 xxl:px-0 lg:flex lg:items-center lg:justify-between">
+    {% set titleTitle = "Our Clients" %}
+    {% set titleTitleColor = "text-white" %}
+    {% include 'partials/title.njk' %} 
     <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-      <div class="inline-flex rounded-md shadow">
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-          Contact us
+      <div class="inline-flex">
+        <a href="#" class="btn--green">
+          View all clients
         </a>
       </div>
     </div>
   </div>
+
+  <div class="container mx-auto px-12 xxl:px-0 mt-10">
+
+    <ul class="lg:flex lg:items-center">
+      {% for icon in clients.items %}:
+      <li class="md:flex-1 mb-10 md:mb-0">
+        <img src="/images/{{ icon.url }}" alt="">
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+    
+
+
 </div>

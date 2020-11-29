@@ -1,12 +1,12 @@
-<div class="bg-green-200">
-  <div class="bg-yellow-500 container mx-auto px-12 xxl:px-0 py-12 lg:py-24 lg:flex lg:items-center lg:justify-between">
-    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
-      <span class="block">Want to get started?</span>
-      <span class="block text-indigo-600">Contact us</span>
-    </h2>
+<div class="bg-idg-blue-mid py-10 bg-fern--4 py-20">
+  <div class="container mx-auto px-12 xxl:px-0 lg:flex lg:items-center lg:justify-between">
+    {% set titleTitle = "Want to get started?<br><span class='text-white'>Contact us</span>" %}
+    {% set titleTitleColor = "text-idg-blue" %}
+    {% set titleTitlePosition = "hidden" %}
+    {% include 'partials/title.njk' %} 
     <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-      <div class="inline-flex rounded-md shadow">
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+      <div class="inline-flex">
+        <a href="#" class="btn--green">
           Get in touch
         </a>
       </div>

@@ -2,14 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
+.page-header {
+  margin-top: -160px; 
+  padding-top: 160px;
+  height: 850px;
+}
+
+@screen sm {
+  .page-header {
+    height: 750px;
+    padding-top: 0;
+  }
+}
+
 .bust--full {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
 
+#site-head {
+  @apply transition duration-300 ease-in-out;
+}
+
+#site-head ul li a {
+  @apply transition duration-300 ease-in-out relative;
+}
+
+#site-head ul li a:hover:after {
+  @apply bg-idg-green;
+  content: "";
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.site-header--scolled {
+  background-color: rgba(255,255,255,.9);
+  @apply shadow-md;
+}
+
+.site-header--scolled ul li a {
+  @apply text-idg-blue;
+}
+
 .btn {
   @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-white bg-idg-blue hover:bg-idg-black;
 }
+
+.btn--green {
+  @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-idg-blue bg-idg-green hover:bg-idg-black hover:text-white;
+}
+
+.btn--white {
+  @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-idg-blue bg-white hover:bg-idg-green hover:text-idg-blue;
+}
+
+.bg-fern--1 {
+  background-image: url(../images/bg-fearn-1.png);
+
+  @apply bg-no-repeat bg-center;
+}
+
+.bg-fern--2 {
+  background-image: url(../images/bg-fearn-2.png);
+
+  @apply bg-no-repeat bg-cover;
+}
+
+.bg-fern--3 {
+  background-image: url(../images/bg-fearn-3.png);
+
+  @apply bg-no-repeat bg-cover bg-top;
+}
+
+.bg-fern--4 {
+  background-image: url(../images/bg-fearn-4.png);
+
+  @apply bg-no-repeat bg-cover bg-top;
+}
+
 
 .arrow--left {
   content: "";
@@ -17,13 +91,12 @@
   height: 0px;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-left: 40px solid black;
+  border-left: 40px solid #E4EBF0;
   top: 50%;
-  left: 0;
+  left: -1px;
   transform: translateY(-50%);
 
   @apply absolute z-10;
-
 }
 
 .arrow--right {
@@ -32,15 +105,13 @@
   height: 0px;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-right: 40px solid black;
+  border-right: 40px solid #B0C4D2;
   top: 50%;
-  right: 0;
+  right: -1px;
   transform: translateY(-50%);
 
   @apply absolute z-10;
-
 }
-
 
 /*------------------------------------*\
     BORDERS
@@ -59,12 +130,12 @@ html:before{
   height: 10px;
   left: 30px;
   right: 30px;
-  top: 30px;
+  top: 10px;
 }
 
 html:after{
   width: 1px;
-  top: 30px;
+  top: 10px;
   right: 30px;
   bottom: 30px;
 }
@@ -78,7 +149,7 @@ body:before{
 
 body:after{
   width: 1px;
-  top: 30px;
+  top: 10px;
   bottom: 30px;
   left: 30px;
 }

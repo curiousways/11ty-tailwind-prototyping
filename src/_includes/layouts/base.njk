@@ -9,15 +9,33 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   </head>
 
-  <body class="text-idg-black">
+  <body class="text-idg-black bg-idg-grey-light">
 
-    <div class="pt-10">
+    <div class="">
       {% include "partials/site-head.njk" %}
       <main>
         {% block content %}{% endblock %}
       </main>
       {% include "partials/site-foot.njk" %}
     </div>
+
+    <script>
+      let scrollpos = window.scrollY
+      const header = document.querySelector("#site-head")
+      const header_height = header.offsetHeight
+    
+      const add_class_on_scroll = () => header.classList.add("site-header--scolled")
+      const remove_class_on_scroll = () => header.classList.remove("site-header--scolled")
+    
+      window.addEventListener('scroll', function() { 
+        scrollpos = window.scrollY;
+    
+        if (scrollpos >= header_height) { add_class_on_scroll() }
+        else { remove_class_on_scroll() }
+    
+        console.log(scrollpos)
+      })
+    </script>
 
   </body>
 
