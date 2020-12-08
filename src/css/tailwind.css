@@ -21,11 +21,31 @@
 }
 
 #site-head {
-  @apply transition duration-300 ease-in-out;
+  @apply transition duration-300 ease-in-out bg-white;
+}
+
+.page-home #site-head {
+  @apply transition duration-300 ease-in-out bg-transparent;
 }
 
 #site-head ul li a {
   @apply transition duration-300 ease-in-out relative;
+}
+
+.page-home #site-head.site-header--scolled ul li a {
+  @apply text-idg-black;
+}
+
+.page-home #site-head.site-header--scolled {
+  @apply bg-white;
+}
+
+.page-home #site-head ul li a {
+  @apply text-white;
+}
+
+.page-home #site-head ul li a:hover {
+  @apply text-idg-black;
 }
 
 #site-head ul li a:hover:after {
@@ -46,6 +66,19 @@
 
 .site-header--scolled ul li a {
   @apply text-idg-blue;
+}
+/* .site-header--scolled .site-logo {
+  background-image: url('./images/idg-logo-alt.png');
+  height: 23px;
+  width: 101px;
+  display: block;
+} */
+
+.site-logo {
+  background-image: url('./images/idg-logo.png');
+  height: 69px;
+  width: 89px;
+  display: block;
 }
 
 .btn {
@@ -84,6 +117,18 @@
   @apply bg-no-repeat bg-cover bg-top;
 }
 
+.bg-fern--5 {
+  background-image: url(../images/bg-fearn-5.png);
+
+  @apply bg-no-repeat bg-cover bg-left;
+}
+
+.bg-fern--6 {
+  background-image: url(../images/bg-fearn-6.png);
+
+  @apply bg-no-repeat bg-contain bg-left;
+}
+
 
 .arrow--left {
   content: "";
@@ -92,6 +137,20 @@
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
   border-left: 40px solid #E4EBF0;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+
+  @apply absolute z-10;
+}
+
+.arrow--left--blue-mid {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid #B0C4D2;
   top: 50%;
   left: -1px;
   transform: translateY(-50%);
@@ -113,43 +172,3 @@
   @apply absolute z-10;
 }
 
-/*------------------------------------*\
-    BORDERS
-\*------------------------------------*/
-
-html:before,
-html:after,
-body:before,
-body:after {
-  @apply bg-idg-blue fixed block;
-  content: " ";
-  z-index: 5;
-}
-
-html:before{
-  height: 10px;
-  left: 30px;
-  right: 30px;
-  top: 10px;
-}
-
-html:after{
-  width: 1px;
-  top: 10px;
-  right: 30px;
-  bottom: 30px;
-}
-
-body:before{
-  height: 1px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
-}
-
-body:after{
-  width: 1px;
-  top: 10px;
-  bottom: 30px;
-  left: 30px;
-}

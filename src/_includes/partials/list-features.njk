@@ -1,0 +1,62 @@
+<div class="bg-idg-blue-light">
+  <div class="container mx-auto px-12 xxl:px-0 py-16 lg:py-24">
+    {% set titleTitle = listFeaturesTitle %}
+    {% set titleJustify = "justify-start" %}
+    {% set titleTitleColor = "text-idg-blue" %}
+
+    {% include 'partials/title.njk' %} 
+
+    <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
+      <div>
+      <p class="mt-4 text-lg">{{ listFeaturesText | safe }}</p>
+    </div>
+    <div class="mt-12 lg:mt-4 lg:col-span-2">
+      <dl class="space-y-8">
+        <div class="flex">
+          <div class="lg:ml-3">
+            <dt class="text-lg leading-6 font-bold text-idg-blue">
+              Deter
+            </dt>
+            <dd class="mt-2 text-base font-light text-lg max-w-3xl">
+              Make the target unattractive, inaccessible or difficult to defeat. 
+            </dd>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="lg:ml-3">
+            <dt class="text-lg leading-6 font-bold text-idg-blue">
+              Detect
+            </dt>
+            <dd class="mt-2 text-base font-light text-lg max-w-3xl">
+              Identify, using both physical and electronic measures, any intrusion to the site.
+            </dd>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="lg:ml-3">
+            <dt class="text-lg leading-6 font-bold text-idg-blue">
+              Respond
+            </dt>
+            <dd class="mt-2 text-base font-light text-lg max-w-3xl">
+              Respond quickly to prevent an intruder from achieving their objective.
+            </dd>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="lg:ml-3">
+            <dt class="text-lg leading-6 font-bold text-idg-blue">
+              Recover
+            </dt>
+            <dd class="mt-2 text-base font-light text-lg max-w-3xl">
+              Mitigate the potential consequences of an incident by resisting damage or quickly recovering from the consequences.
+            </dd>
+          </div>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+</div>

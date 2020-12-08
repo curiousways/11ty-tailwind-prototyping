@@ -1,6 +1,11 @@
-<div class="flex justify-center">
+{% if titleJustify %}
+  <div class="flex {{ titleJustify }}">
+{% else %}
+  <div class="flex justify-center">
+{% endif %}
+
   <div class="inline-flex flex-col"> 
-    <h2 class="text-4xl tracking-tight font-bold {{ titleTitleColor }}">{{ titleTitle | safe }}</h2>
+    <h2 class="{% if titleTitleSize %} {{ titleTitleSize }} {% else %} text-4xl {% endif %} tracking-tight font-bold {{ titleTitleColor }}">{{ titleTitle | safe }}</h2>
     <span class="block text-4xl {{ titleTitlePosition }} {{ titleTitleColor }}">&mdash;</span>
   </div>
 </div>

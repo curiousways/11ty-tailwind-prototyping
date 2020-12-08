@@ -1,0 +1,28 @@
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  {% set pageHeaderSubPageImg = "/images/panel-1.jpg" %}
+  {% set pageHeaderSubPageTitle = "Site Security" %}
+  {% set pageHeaderSubPageSubTitle = "Ensuring safety and operational continuity for client sites around the world." %}
+  {% include "partials/page-header-sub-page.njk" %}
+
+  {% set cta3Title = "Situation & Solution" %}
+  {% include "partials/cta-3.njk" %}
+
+  {% include "partials/text-highlight.njk" %}
+
+  {% set listFeaturesTitle = "Our approach" %}
+  {% set listFeaturesText = "Our approach considers static security in the context of the surrounding environment, beyond the site perimeter, by assessing adjacent threats that could directly or indirectly impact site security.<br /><br /> We follow four principles of protection:" %}
+  {% include "partials/list-features.njk" %}
+
+  {% set listFeaturesBulletsTitle = "IDG’s site security services" %}
+  {% set listFeaturesBulletsText = "We implement security measures that minimise inconvenience and maximise protection." %}
+  {% include "partials/list-features--bullets.njk" %}
+
+  {% set cta5Title = "I am writing this letter to express my gratitude for the brave action by your team of Gurkha guards on 25 February to protect the UNAMA staff and property in Kunduz.  The defence of the UNAMA compound has once again reinforced the Gurkhas’ great traditions of valour, sacrifice and dedication in the line of duty." %}
+  {% set cta5Text = "Special Representative of the Secretary-General, Kabul" %}
+  {% set cta5TitleSize = "text-3xl" %}
+  {% include "partials/cta-5.njk" %}
+
+{% endblock %}

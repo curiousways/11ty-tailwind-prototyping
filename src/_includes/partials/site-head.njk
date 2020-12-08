@@ -1,21 +1,19 @@
-<header id="site-head" class="z-20 sticky py-6" style="top: 20px; margin-right: 31px; margin-left: 31px;">
+<header id="site-head" class="z-20 sticky py-6 top-0">
 
   <div class="flex justify-between items-center mx-auto container px-5 sm:px-12 xxl:px-0">
 
     <div>
-      <a href="/">
-        {% include "partials/brand.svg" %}
-      </a>
+      <a class="site-logo" href="/"></a>
     </div>
     <ul class="space-x-10 hidden xl:flex">
       {% for item in navigation.items %}
       <li>
-        <a class="font-bold text-white hover:text-idg-black" href="{{ item.url }}">{{ item.text }}</a>
+        <a class="font-bold" href="{{ item.url }}">{{ item.text }}</a>
       </li>
       {% endfor %}
     </ul>
     <div class="hidden xl:flex">
-      <a class="btn--green" href="/contact">Contact</a>
+      <img src="/images/flag.png" alt="">
     </div>
 
     <div class="xl:hidden">
