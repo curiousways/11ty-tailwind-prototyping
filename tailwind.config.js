@@ -9,7 +9,7 @@ module.exports = {
        'idg-grey-light': '#E5E5E5',
        'idg-blue-light': '#E4EBF0',
        'idg-blue-mid': '#B0C4D2',
-       'idg-black': '#424242',
+       'idg-black': '#434343',
        'idg-blue': '#003667',
        'idg-green': '#BED582',
       },
@@ -24,5 +24,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+     require('tailwindcss-aspect-ratio'),
+  ],
 }

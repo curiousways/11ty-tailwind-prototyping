@@ -1,0 +1,57 @@
+<!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ]
+  }
+  ```
+-->
+<div class="bg-white">
+  <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+    <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+      <div class="space-y-5 sm:space-y-4">
+
+        {% set titleTitle = "Leadership" %}
+        {% set titleJustify = "justify-start" %}
+        {% set titleTitleColor = "text-idg-blue" %}
+        {% include 'partials/title.njk' %} 
+
+        <p class="text-lg font-light">Some introductory copy to the leadership team. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      
+      </div>
+      <div class="lg:col-span-2">
+        <ul class="space-y-12 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
+
+          {% set personTitle = "Ian Douglas Gordon" %}
+          {% set personJob = "Chairman" %}
+          {% set personDescription = "Ian is the founder of IDG Security. A former British Army officer commissioned into the 7th Duke of Edinburgh’s Own Gurkha Rifles, Iaan subsequently saw active service as an officer in HM the Sultan of Oman’s Armed Forces both during the war in Dhofar in the 1970s and afterwards in Oman. Subsequently he commanded in the rank of Assistant Commissioner, the Gurkha Contingent of the Singapore Police Force. He is a Singapore Permanent Resident but travels frequently to wherever the Company is working. He speaks colloquial Nepali and Arabic" %}
+          {% include 'partials/person.njk' %} 
+
+          {% set personTitle = "Guy Winter" %}
+          {% set personJob = "CEO" %}
+          {% set personDescription = "Guy is a highly experienced security risk practitioner, having delivered services in a range of complex jurisdictions, such as Iraq, Afghanistan, Libya, South Sudan, Myanmar and Thailand. His clients have included the US Department of Defense and the US Department of State. Guy holds a PhD in Psychology." %}
+          {% include 'partials/person.njk' %} 
+
+          {% set personTitle = "Lucy Hymas" %}
+          {% set personJob = "CFO" %}
+          {% set personDescription = "Lucy has over 20 years finance experience, starting with ten years in local government followed by 11 years in the security industry. Lucy has managed the finance function for three security companies in Dubai, with annual turnover of up to $252m. Lucy trained in accountancy (FMAAT and CIPFA Level 1+2) and is currently undertaking diplomas in VAT, IFRS, and further studies under ACCA. " %}
+          {% include 'partials/person.njk' %} 
+
+          {% set personTitle = "Nicholas Alister-Jones" %}
+          {% set personJob = "Director" %}
+          {% set personDescription = "First commissioned into Britain’s Royal Air Force Regiment, Nicholas later served on secondment to HM the Sultan of Oman’s Army on operations against communist insurgents in Dhofar in the 1970s. He subsequently transferred to HM the Sultan’s forces and was fully occupied in the restructuring of HM the Sultan’s Armed Forces throughout the late 1970s and 1980s. He retired as a lieutenant colonel after fifteen years’ service. Since leaving Oman, Nicholas has lived and worked in the Gulf region. He started his association with the United Arab Emirates when he opened the Representative Office in Dubai for the State Government of South Australia. In 2009 he was appointed the Special Envoy to the Gulf Co-operation Council for South Australia. He speaks Arabic and Baluch." %}
+          {% include 'partials/person.njk' %} 
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

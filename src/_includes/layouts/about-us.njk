@@ -1,0 +1,34 @@
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  {% set pageHeaderFullImgSubTitle = title %}
+  {% set pageHeaderFullImgTitle = "‘Hami Jasto Kohi Chhaina’<br/><span class='text-lg font-light'>(There is nobody quite like us)" %}
+  {% set pageHeaderFullBGClass = "bg-idg-blue bg-fern--7" %}
+  {% include "partials/page-header-full.njk" %}
+
+  {% set textHighlightText = "IDG offers protective services that enable our international, commercial and NGO clients to pursue their missions in challenging and complex regions of the world." %}
+  {% set textHighlightTextMain = "Our heritage is founded in the culture, expertise and values of the Brigade of Gurkhas of the British Army. As the Gurkhas say, ‘Hami Jasto Kohi Chhaina’ (There is nobody quite like us).  We now employ more than 2,500 people including former Gurkhas as well as experienced security guards from around the world. They are united by a common commitment to IDG’s Code of Honour. The Code lays out our combined responsibility to the personal, familial and social welfare of all of our staff and ensures that only the very best security specialists wear the IDG badge.<br /><br />We uphold a reputation for exemplary ethical and moral standards and are known for our deep and profound commitment to all the people who work for us, and for those among whom we work." %}
+  {% include "partials/text-highlight.njk" %}
+
+  {% set listBulletaTitle = "Our ethos" %}
+  {% include "partials/list-bullets.njk" %}
+
+  {% include "partials/people.njk" %}
+
+  {% set cta3Title = "Affiliations" %}
+  {% include "partials/cta-3.njk" %}
+
+  {% set previewLeftImg = "/images/affiliate-test.png" %}
+  {% set previewLeftBG = "bg-idg-blue-light" %}
+  {% set previewLeftArrow = "arrow--right--blue-light" %}
+  {% set previewLeftTitle = "Our Affiliations" %}
+  {% set previewLeftButtonText = "View here" %}
+  {% set previewLeftText = "IDG is a member of the International Code of Conduct Association for private security providers (ICoCA), and complies with the Principles of the Montreaux Document, and the UN Universal Declaration of Human Rights.<br /><br />We are ISO 9001:2008 certified and on track to achieve ISO 18788-2015." %}
+  {% include "partials/preview--left.njk" %}
+
+  {% set cta3Title = "Locations" %}
+  {% include "partials/cta-3.njk" %}
+  {% include "partials/map.njk" %}
+
+{% endblock %}

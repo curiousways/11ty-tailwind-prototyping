@@ -129,6 +129,12 @@
   @apply bg-no-repeat bg-contain bg-left;
 }
 
+.bg-fern--7 {
+  background-image: url(../images/bg-fearn-5.png);
+
+  @apply bg-no-repeat bg-cover bg-left;
+
+}
 
 .arrow--left {
   content: "";
@@ -172,3 +178,20 @@
   @apply absolute z-10;
 }
 
+.arrow--right--blue-light {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-right: 40px solid #E4EBF0;
+  top: 50%;
+  right: -1px;
+  transform: translateY(-50%);
+
+  @apply absolute z-10;
+}
+
+.list-disc li::marker {
+  @apply text-idg-blue-mid;
+}

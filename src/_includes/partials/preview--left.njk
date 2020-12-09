@@ -1,4 +1,4 @@
-<main class="lg:relative bg-idg-blue-mid">
+<main class="lg:relative {% if previewLeftBG %} {{ previewLeftBG }} {% else %} bg-idg-blue-mid {% endif %}">
 
   <div class="mx-auto container px-12 xxl:px-0 w-full pt-16 pb-20 lg:py-20 text-center lg:text-left lg:flex lg:justify-end">
     <div class="lg:w-1/2">
@@ -7,12 +7,16 @@
         <h2 class="text-idg-blue font-bold text-xl">{{ previewLeftTitle }}</h2>
         <span class="block text-idg-blue text-4xl">&mdash;</span>
         <strong>{{ previewLeftSubTitle }}</strong>
-        <p class="font-light">{{ previewLeftText }}</p>
+        <p class="font-light">{{ previewLeftText | safe }}</p>
 
         <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div>
             <a href="#" class="btn">
-              Learn more
+              {% if previewLeftButtonText %}
+                {{ previewLeftButtonText }}
+              {% else %}
+                Learn more
+              {% endif %}
             </a>
           </div>
         </div>
@@ -22,7 +26,7 @@
   </div>
 
   <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:left-0 lg:w-5/12 lg:h-full">
-    <div class="arrow--right"></div>
+    <div class="{% if previewLeftArrow %} {{ previewLeftArrow }} {% else %} arrow--right {% endif %}"></div>
     <img class="absolute inset-0 w-full h-full object-cover" src="{{ previewLeftImg }}" alt="">
   </div>
 
