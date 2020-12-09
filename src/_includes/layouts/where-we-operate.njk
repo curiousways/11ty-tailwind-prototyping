@@ -1,0 +1,24 @@
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  {% set pageHeaderFullImgSubTitle = "Somalia" %}
+  {% set pageHeaderFullImgTitle = "Navigating the complex security currents of Somalia" %}
+  {% include "partials/page-header-full-image.njk" %}
+
+  {% set cta3Title = "Situation & Solution" %}
+  {% include "partials/cta-3.njk" %}
+
+  {% set textHighlightText = "IDG currently operates in all the major regions of the Federal Republic, including Puntland and Somaliland. We hold full licenses to operate as a Private Security Contractor. We enable UN agencies to fulfil their respective humanitarian and development missions. <br /><br />We enable UN agencies to fulfil their respective humanitarian and development missions." %}
+  {% include "partials/text-highlight.njk" %}
+
+  {% set listFeaturesBigTitle = "Our approach" %}
+  {% set listFeaturesBigText = "IDG combines international experience with local knowledge and expertise to keep our clients safe. With our Somali partner, Horn Risk Management, we enable organisations of all sizes to operate successfully and safely in places they would otherwise not be able to. Our partnership dovetails the grassroots knowledge of a successful Somali company with the unparalleled UN experience and international best practice of a respected global security provider." %}
+  {% include "partials/list-features--big.njk" %}
+
+  {% set cta3Title = "Our locations in Somalia" %}
+  {% include "partials/cta-3.njk" %}
+
+  {% include "partials/map.njk" %}
+
+{% endblock %}
