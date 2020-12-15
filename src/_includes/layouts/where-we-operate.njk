@@ -7,9 +7,6 @@
   {% set pageHeaderFullBG = "background-image: url('/images/mask-test.png')" %}
   {% include "partials/page-header-right.njk" %}
 
-  {% set cta3Title = "Situation & Solution" %}
-  {% include "partials/cta-3.njk" %}
-
   {% set textHighlightText = "IDG currently operates in all the major regions of the Federal Republic, including Puntland and Somaliland. We hold full licenses to operate as a Private Security Contractor. We enable UN agencies to fulfil their respective humanitarian and development missions. <br /><br />We enable UN agencies to fulfil their respective humanitarian and development missions." %}
   {% include "partials/text-highlight.njk" %}
 
@@ -22,6 +19,10 @@
 
   {% include "partials/map.njk" %}
 
+  {% set cardsTitle = "Other Countries We Operate In" %}
   {% include "partials/cards.njk" %}
+
+  {% set ctaSubtitle = "You can get in touch with our Somali office at <u>XXXXXXXX@idg-security.com</u>" %}
+  {% include "partials/cta.njk" %}
 
 {% endblock %}
