@@ -113,7 +113,7 @@
 .bg-fern--2--dark {
   background-image: url(../images/bg-fearn-2--dark.png);
 
-  @apply bg-no-repeat bg-center bg-cover;
+  @apply bg-no-repeat bg-center bg-contain;
 }
 
 .bg-fern--3 {
