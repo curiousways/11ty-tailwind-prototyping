@@ -154,6 +154,21 @@
 
 }
 
+.arrow--bottom {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-bottom: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #003667;
+  border-left: 40px solid transparent;
+  bottom: -115px;
+  left: 50%;
+  transform: translateY(-50%);
+
+  @apply absolute z-10;
+}
+
 .arrow--left {
   content: "";
   width: 0px;

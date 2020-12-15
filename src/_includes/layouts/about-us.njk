@@ -4,7 +4,8 @@
 
   {% set pageHeaderFullImgSubTitle = title %}
   {% set pageHeaderFullImgTitle = "‘Hami Jasto Kohi Chhaina’<br/><span class='text-lg font-light'>(There is nobody quite like us)" %}
-  {% set pageHeaderFullBGClass = "bg-idg-blue bg-fern--7" %}
+  {% set pageHeaderFullBGClass = "bg-idg-blue-mid bg-fern--5" %}
+  {% set pageHeaderColor = "text-idg-blue" %}
   {% include "partials/page-header-full.njk" %}
 
   {% set textHighlightText = "IDG offers protective services that enable our international, commercial and NGO clients to pursue their missions in challenging and complex regions of the world." %}
@@ -16,16 +17,15 @@
 
   {% include "partials/people.njk" %}
 
-  {% set cta3Title = "Affiliations" %}
-  {% include "partials/cta-3.njk" %}
-
   {% set affiliateImg = "/images/affiliate-test.png" %}
   {% set affiliateTitle = "Our Affiliations" %}
   {% set affiliateText = "IDG is a member of the International Code of Conduct Association for private security providers (ICoCA), and complies with the Principles of the Montreaux Document, and the UN Universal Declaration of Human Rights.<br /><br />We are ISO 9001:2008 certified and on track to achieve ISO 18788-2015." %}
   {% include "partials/affiliate.njk" %}
 
-  {% set cta3Title = "Locations" %}
-  {% include "partials/cta-3.njk" %}
-  {% include "partials/map.njk" %}
+  {% set cta3Title = "Our Global Locations" %}
+  {% include "partials/cta-blue.njk" %}
+  <img class="block w-full" src="/images/map-big.png" alt="">
+
+  {% include "partials/cta.njk" %}
 
 {% endblock %}
