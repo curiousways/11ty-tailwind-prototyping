@@ -3,33 +3,31 @@
 {% block content %}
 
   {% set pageHeaderFullImgSubTitle = title %}
-  {% set pageHeaderFullImgTitle = "IDG Policies" %}
+  {% set pageHeaderFullImgTitle = "This is a headline around the policies and further information you may require" %}
   {% set pageHeaderFullBGClass = "bg-idg-blue bg-fern--7" %}
   {% include "partials/page-header-full.njk" %}
 
-  {% set previewRightImg = "/images/panel-1.jpg" %}
-  {% set previewRightTitle = "Anti-Bribery and coruption" %}
-  {% set previewRightText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." %}
-  {% include "partials/preview--right.njk" %}
+  {% set ctaStripTitle = "Anti-Bribery and Corruption" %}
+  {% set ctaStripColor = "bg-idg-blue-light" %}
+  {% include "partials/cta-strip.njk" %}
 
-  {% set previewLeftImg = "/images/panel-2.jpg" %}
-  {% set previewLeftTitle = "Slavery and human trafficking" %}
-  {% set previewLeftText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." %}
-  {% include "partials/preview--left.njk" %}
+  {% set ctaStripTitle = "Slavery and Human Trafficking" %}
+  {% set ctaStripColor = "bg-white" %}
+  {% include "partials/cta-strip.njk" %}
 
-  {% set previewRightImg = "/images/panel-3.jpg" %}
-  {% set previewRightTitle = "Preventing sexual exploitation and abuse" %}
-  {% set previewRightText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." %}
-  {% include "partials/preview--right.njk" %}
+  {% set ctaStripTitle = "Preventing Sexual Exploitation and Abuse" %}
+  {% set ctaStripColor = "bg-idg-blue-light" %}
+  {% include "partials/cta-strip.njk" %}
 
-  {% set previewLeftImg = "/images/panel-4.jpg" %}
-  {% set previewLeftTitle = "Whistleblowing" %}
-  {% set previewLeftText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." %}
-  {% include "partials/preview--left.njk" %}
+  {% set ctaStripTitle = "Whistleblowing" %}
+  {% set ctaStripColor = "bg-white" %}
+  {% include "partials/cta-strip.njk" %}
 
-  {% set previewRightImg = "/images/panel-5.jpg" %}
-  {% set previewRightTitle = "Diversity and Inclusion" %}
-  {% set previewRightText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." %}
-  {% include "partials/preview--right.njk" %}
+  {% set ctaStripTitle = "Diversity and Inclusion" %}
+  {% set ctaStripColor = "bg-idg-blue-light" %}
+  {% include "partials/cta-strip.njk" %}
+
+  {% set ctaTitle = "Get in touch" %}
+  {% include "partials/cta.njk" %}
 
 {% endblock %}

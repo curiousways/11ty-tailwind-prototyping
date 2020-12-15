@@ -1,0 +1,25 @@
+<div class="{{ ctaStripColor }} pt-16 pb-10">
+  <div class="container mx-auto px-12 xxl:px-0">
+    {% set titleTitle = ctaStripTitle %}
+    {% set titleJustify = "justify-start" %}
+    {% set titleTitleSize = "text-2xl" %}
+    {% set titleTitleColor = "text-idg-blue" %}
+    <div class="lg:flex lg:items-center lg:justify-between">
+      <div>
+        {% include 'partials/title.njk' %} 
+        {% if titleSubtitle %}
+          <div class="font-bold text-white mt-2">
+            {{ titleSubtitle | safe }}
+          </div>
+        {% endif %}
+      </div>  
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+        <div class="inline-flex">
+          <a href="#" class="btn">
+            View here
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
