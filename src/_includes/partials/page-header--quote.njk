@@ -1,0 +1,9 @@
+<main class="bg-cover {{ pageHeaderFullBGClass }}" style="{{ pageHeaderFullBG }}">
+  <div class="mx-auto container px-12 xxl:px-0 w-full pt-16 pb-20 lg:py-48 text-center lg:text-left">
+    <div class="lg:max-w-screen-xl">
+      <strong class="text-4xl {% if pageHeaderColor %} {{ pageHeaderColor }} {% else %} text-white {% endif %}">{{ pageHeaderFullImgTitle | safe }}</strong>
+      <span class="block {% if pageHeaderColor %} {{ pageHeaderColor }} {% else %} text-white {% endif %} text-4xl">&mdash;</span>
+      <cite class="not-italic text-white text-lg font-light">Mark Carney, Former Governor Bank of England on how the economy must yield to human values, Economist.</cite>
+    </div>
+  </div>
+</main>

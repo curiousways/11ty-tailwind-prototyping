@@ -1,27 +1,30 @@
-<main class="lg:relative bg-idg-blue-mid">
+<main class="lg:relative {% if previewRightBG %} {{ previewRightBG }} {% else %} bg-idg-blue-mid {% endif %}">
   <div class="mx-auto container px-12 xxl:px-0 w-full pt-16 pb-20 lg:py-20 text-center lg:text-left">
     <div class="lg:w-1/2">
 
       <div class="lg:max-w-lg">
 
-        <h2 class="text-idg-blue font-bold text-xl">{{ previewRightTitle }}</h2>
-        <span class="block text-idg-blue text-4xl">&mdash;</span>
+        <h2 class="{% if previewRightTextColor %} {{ previewRightTextColor }} {% else %} text-idg-blue {% endif %} font-bold text-xl">{{ previewRightTitle }}</h2>
+        <span class="block {% if previewRightTextColor %} {{ previewRightTextColor }} {% else %} text-idg-blue {% endif %} text-4xl">&mdash;</span>
         <strong>{{ previewRightSubTitle }}</strong>
-        <p class="font-light">{{ previewRightText }}</p>
+        <p class="{% if previewRightTextColor %} {{ previewRightTextColor }} {% endif %} font-light">{{ previewRightText }}</p>
 
-        <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-          <div>
-            <a href="#" class="btn">
-              Learn more
-            </a>
+        {% if previewRightNoBtn %}
+        {% else %}
+          <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+            <div>
+              <a href="#" class="btn">
+                Learn more
+              </a>
+            </div>
           </div>
-        </div>
+        {% endif %}
 
       </div>
     </div>
   </div>
   <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-5/12 lg:h-full">
-    <div class="arrow--left"></div>
+    <div class="{% if previewRightArrowColor %} {{ previewRightArrowColor }} {% else %} arrow--left {% endif %}"></div>
     <img class="absolute inset-0 w-full h-full object-cover" src="{{ previewRightImg }}" alt="">
   </div>
 </main>

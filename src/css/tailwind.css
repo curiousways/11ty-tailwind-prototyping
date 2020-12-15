@@ -197,6 +197,20 @@
   @apply absolute z-10;
 }
 
+.arrow--left--blue {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid #003667;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+
+  @apply absolute z-10;
+}
+
 .arrow--right {
   content: "";
   width: 0px;
