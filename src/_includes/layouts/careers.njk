@@ -1,0 +1,17 @@
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  {% set pageHeaderSubPageImg = "/images/header-img-1.png" %}
+  {% set pageHeaderSubPageTitle = title %}
+  {% set pageHeaderSubPageSubTitle = "Title here about careers at IDG and how to apply" %}
+  {% include "partials/page-header-sub-page.njk" %}
+  
+  {% set textHighlightText = "We’re always looking for experienced security specialists to work on our projects around the world. If you share our ethos of responsibility and high ethical standards then browse the opportunities below." %}
+  {% set textHighlightTextMain = "Or complete the form below and we’ll get in touch if your experience matches any of our vacancies." %}
+  {% include "partials/text-highlight.njk" %}
+
+  {% set contactFormBG = "bg-idg-blue-light" %}
+  {% include "partials/contact-form.njk" %}
+
+{% endblock %}

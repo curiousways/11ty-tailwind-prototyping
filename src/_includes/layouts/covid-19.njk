@@ -1,0 +1,26 @@
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  {% set pageHeaderFullImgSubTitle = title %}
+  {% set pageHeaderFullImgTitle = "Title goes here" %}
+  {% set pageHeaderFullBGClass = "bg-idg-blue bg-fern--7" %}
+  {% include "partials/page-header-full.njk" %}
+
+  {% set textHighlightText = "As a security provider we continue to monitor the impact of COVID-19 on societies and economies across the globe. We are acutely aware of the potential humanitarian impacts and have also noted small escalations in violence in our countries of operation as terrorist groups seek to capitalise on the situation." %}
+  {% include "partials/text-highlight.njk" %}
+
+  {% set previewRightImg = "/images/panel-1.jpg" %}
+  {% set previewRightTitle = "A COVID-19 case study: Somalia" %}
+  {% set previewRightText = "In Somalia we needed to protect our guards from infection in the camps where they work and were quick to implement COVID measures and issue protective. However, we wanted to go beyond this and help them protect themselves and their families at home as well. We issued monthly hygiene hampers so they could disinfect their homes and protect their families as best as possible. As food prices increased suddenly, we issued salaries 10 days early to protect our people against the unexpected costs." %}
+  {% include "partials/preview--right.njk" %}
+
+  {% set cta3Title = "IDG’s Global Response to COVID-19" %}
+  {% include "partials/cta-3.njk" %}
+
+  {% include "partials/list-title-text.njk" %}
+
+
+
+
+{% endblock %}

@@ -5,12 +5,10 @@
 .page-header {
   margin-top: -160px; 
   padding-top: 160px;
-  height: 850px;
 }
 
 @screen sm {
   .page-header {
-    height: 750px;
     padding-top: 0;
   }
 }
@@ -28,11 +26,13 @@
   @apply transition duration-300 ease-in-out bg-transparent;
 }
 
-#site-head ul li a {
-  @apply transition duration-300 ease-in-out relative;
+#site-head ul li a,
+#site-head ul li button {
+  @apply transition duration-300 ease-in-out relative font-bold;
 }
 
-.page-home #site-head.site-header--scolled ul li a {
+.page-home #site-head.site-header--scolled ul li a,
+.page-home #site-head.site-header--scolled ul li button {
   @apply text-idg-black;
 }
 
@@ -40,16 +40,20 @@
   background-color: rgba(255,255,255,.9);
 }
 
-.page-home #site-head ul li a {
-  @apply text-white;
+.page-home #site-head ul li a,
+.page-home #site-head ul li button
+ {
+  @apply text-idg-blue font-bold relative;
 }
 
-.page-home #site-head ul li a:hover {
+.page-home #site-head ul li a:hover,
+.page-home #site-head ul li button:hover {
   @apply text-idg-black;
 }
 
-#site-head ul li a:hover:after {
-  @apply bg-idg-green;
+#site-head ul li a:hover:after, 
+#site-head ul li button:hover:after  {
+  @apply bg-idg-blue;
   content: "";
   height: 3px;
   width: 30px;
@@ -64,7 +68,8 @@
   @apply shadow-md;
 }
 
-.site-header--scolled ul li a {
+.site-header--scolled ul li a,
+.site-header--scolled ul li button  {
   @apply text-idg-blue;
 }
 /* .site-header--scolled .site-logo {
@@ -82,15 +87,15 @@
 }
 
 .btn {
-  @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-white bg-idg-blue hover:bg-idg-black;
+  @apply flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-white bg-idg-blue hover:bg-idg-black hover:text-white;
 }
 
 .btn--green {
-  @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-idg-blue bg-idg-green hover:bg-idg-black hover:text-white;
+  @apply flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-idg-blue bg-idg-green hover:bg-idg-black hover:text-white;
 }
 
 .btn--white {
-  @apply w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-idg-blue bg-white hover:bg-idg-green hover:text-idg-blue;
+  @apply flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-tl-3xl rounded-br-3xl text-idg-blue bg-white hover:bg-idg-black hover:text-idg-blue;
 }
 
 .bg-fern--1 {
@@ -103,6 +108,12 @@
   background-image: url(../images/bg-fearn-2.png);
 
   @apply bg-no-repeat bg-cover;
+}
+
+.bg-fern--2--dark {
+  background-image: url(../images/bg-fearn-2--dark.png);
+
+  @apply bg-no-repeat bg-center bg-cover;
 }
 
 .bg-fern--3 {
@@ -136,13 +147,20 @@
 
 }
 
+.bg-fern--8 { 
+  background-image: url(../images/bg-fearn-8.png);
+
+  @apply bg-no-repeat bg-cover bg-left;
+
+}
+
 .arrow--left {
   content: "";
   width: 0px;
   height: 0px;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-left: 40px solid #E4EBF0;
+  border-left: 40px solid #B0C4D2;
   top: 50%;
   left: -1px;
   transform: translateY(-50%);

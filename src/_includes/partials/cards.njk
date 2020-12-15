@@ -14,11 +14,13 @@
       {% set cardText = "The primary UN security supplier for nearly two decades." %}
       {% include 'partials/card.njk' %}
 
-      {% set cardImg = "/images/card-2.jpg" %}
-      {% set cardTitle = "Somalia" %}
-      {% set cardBg = "bg-idg-blue-mid" %}
-      {% set cardText = "Navigating the complex security currents of Somalia." %}
-      {% include 'partials/card.njk' %}
+      {% if showSomalia %}
+        {% set cardImg = "/images/card-2.jpg" %}
+        {% set cardTitle = "Somalia" %}
+        {% set cardBg = "bg-idg-blue-mid" %}
+        {% set cardText = "Navigating the complex security currents of Somalia." %}
+        {% include 'partials/card.njk' %}
+      {% endif %}
 
       {% set cardImg = "/images/card-3.jpg" %}
       {% set cardTitle = "Myanmar" %}

@@ -1,10 +1,6 @@
 {
   "items": [
     {
-      "text": "Our Expertise",
-      "url": "/our-expertise/"
-    },
-    {
       "text": "Where we operate",
       "url": "/where-we-operate"
     },
@@ -22,11 +18,11 @@
     },
     {
       "text": "Covid-19",
-      "url": "covid-19"
+      "url": "/covid-19"
     },
     {
-      "text": "Responsibility",
-      "url": "responsibility"
+      "text": "Policies",
+      "url": "/policies"
     },
     {
       "text": "Contact",
