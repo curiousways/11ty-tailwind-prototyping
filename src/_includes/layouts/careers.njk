@@ -10,7 +10,7 @@
   {% set textHighlightText = "We’re always looking for experienced security specialists to work on our projects around the world. If you share our ethos of responsibility and high ethical standards then browse the opportunities below." %}
   {% include "partials/text-highlight.njk" %}
 
-  <div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 bg-idg-blue-light">
+  {# <div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 bg-idg-blue-light">
     <div class="relative container px-12 xxl:px-0 mx-auto">
       {% set titleTitle = "Featured Jobs" %}
       {% set titleTitleColor = "text-idg-blue" %}
@@ -37,10 +37,10 @@
         {% include 'partials/card.njk' %}
       </div>
     </div>
-  </div>
+  </div> #}
 
 <div class="bg-idg-blue-light">
-  <div class="relative container px-12 xxl:px-0 mx-auto pb-20">
+  <div class="relative container px-12 xxl:px-0 mx-auto py-20">
     <div class="flex flex-col">
       <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -187,8 +187,8 @@
   </div>
 </div>
 
-  {% set ctaTitle = "Sign Up" %}
-  {% set ctaBtnText = "Sign Up" %}
+  {% set ctaTitle = "Register your CV" %}
+  {% set ctaBtnText = "Register" %}
   {% set ctaSubtitle = "If you would like to be contacted when a suitable role opens, please complete a general registration with us by signing up" %}
   {% include "partials/cta.njk" %}
 

@@ -1,8 +1,10 @@
 <div class="{{ cta5TitleBG }} {{ cta5TitleColor }} text-center">
   <div class="container mx-auto px-12 xxl:px-0 py-16 lg:py-24">
 
-    <p class="max-w-screen-md mx-auto {{ cta5SubtitleWeight }}">{{ cta5Subtitle }}</p>
-    <span class="block text-4xl {{ cta5TitleColor }}">&mdash;</span>
+    {% if cta5Subtitle %}
+      <p class="max-w-screen-md mx-auto {{ cta5SubtitleWeight }}">{{ cta5Subtitle }}</p>
+      <span class="block text-4xl {{ cta5TitleColor }}">&mdash;</span>
+    {% endif %}
 
     {% set titleTitle = cta5Title %}
     {% set titleTitleBG = cta5TitleBG %}

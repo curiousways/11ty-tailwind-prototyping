@@ -1,9 +1,14 @@
-<main class="bg-cover {{ pageHeaderFullBGClass }}" style="{{ pageHeaderFullBG }}">
-  <div class="mx-auto container px-12 xxl:px-0 w-full pt-16 pb-20 lg:py-48 text-center lg:text-left">
+<div class="bg-cover relative {{ pageHeaderFullBGClass }}" style="{{ pageHeaderFullBG }}">
+  <div class="h-banner flex flex-column items-center py-32 mx-auto container px-12 xxl:px-0 w-full text-center lg:text-left">
     <div class="lg:max-w-lg">
       <h2 class="{% if pageHeaderColor %} {{ pageHeaderColor }} {% else %} text-white {% endif %} font-bold text-xl">{{ pageHeaderFullImgSubTitle | safe }}</h2>
       <span class="block {% if pageHeaderColor %} {{ pageHeaderColor }} {% else %} text-white {% endif %} text-4xl">&mdash;</span>
       <strong class="text-4xl {% if pageHeaderColor %} {{ pageHeaderColor }} {% else %} text-white {% endif %}">{{ pageHeaderFullImgTitle | safe }}</strong>
     </div>
+
+    {% if pageHeaderFullImg %}
+      <img class="h-banner block absolute right-0 top-0" src="/images/mask-test-2.png" alt="">
+    {% endif %}
+
   </div>
-</main>
+</div>

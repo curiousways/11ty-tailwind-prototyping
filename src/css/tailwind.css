@@ -33,7 +33,7 @@
 
 .page-home #site-head.site-header--scolled ul li a,
 .page-home #site-head.site-header--scolled ul li button {
-  @apply text-idg-black;
+  @apply text-idg-blue;
 }
 
 .page-home #site-head.site-header--scolled {
@@ -48,7 +48,7 @@
 
 .page-home #site-head ul li a:hover,
 .page-home #site-head ul li button:hover {
-  @apply text-idg-black;
+  @apply text-idg-blue;
 }
 
 #site-head ul li a:hover:after, 
@@ -81,8 +81,8 @@
 
 .site-logo {
   background-image: url('./images/idg-logo.png');
-  height: 69px;
-  width: 89px;
+  height: 55px;
+  width: 63px;
   display: block;
 }
 
@@ -217,7 +217,7 @@
   height: 0px;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-right: 40px solid #B0C4D2;
+  border-right: 40px solid #E4EBF0;
   top: 50%;
   right: -1px;
   transform: translateY(-50%);

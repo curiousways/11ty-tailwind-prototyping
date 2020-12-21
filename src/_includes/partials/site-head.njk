@@ -11,7 +11,7 @@
           
           <li>
             <button type="button" @click="expertiseMenuOpen = !expertiseMenuOpen; moreMenuOpen = false" x-state:on="Item active" x-state:off="Item inactive" :class="{ 'text-idg-blue': expertiseMenuOpen, 'text-idg-black': !expertiseMenuOpen }" class="group inline-flex items-center text-base focus:outline-none">
-              <span>Our expertise</span>
+              <span class="text-idg-blue">Our expertise</span>
               {# <svg x-state:on="Item active" x-state:off="Item inactive" class="ml-2 h-5 w-5 group-hover:text-gray-500 text-idg-black" x-bind:class="{ 'text-gray-600': expertiseMenuOpen, 'text-gray-400': !expertiseMenuOpen }" x-description="Heroicon name: chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
               </svg> #}
@@ -20,7 +20,7 @@
 
           {% for item in navigation.items %}
           <li>
-            <a class="font-bold" href="{{ item.url }}">{{ item.text }}</a>
+            <a class="font-bold text-idg-blue" href="{{ item.url }}">{{ item.text }}</a>
           </li>
           {% endfor %}
         </ul>

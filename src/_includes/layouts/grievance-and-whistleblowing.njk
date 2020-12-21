@@ -1,0 +1,20 @@
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  {% set pageHeaderFullImgSubTitle = title %}
+  {% set pageHeaderFullImgTitle = "Title about how to contact us with Grievance & Whistleblowing information" %}
+  {% set pageHeaderFullBG = "background-image: url('/images/mask-test.png')" %}
+  {% include "partials/page-header-right.njk" %}
+
+  {% set contactFormBG = "bg-idg-blue-mid" %}
+
+  <div class="bg-idg-blue-mid">
+    <div class="container mx-auto px-12 xxl:px-0">
+      <div class="max-w-screen-md mx-auto">
+        {% include "partials/form.njk" %}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

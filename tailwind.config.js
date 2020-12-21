@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      height: {
+       banner: '36rem',
+      },
       borderRadius: {
         '4xl': '3rem',
         'huge': '16rem',

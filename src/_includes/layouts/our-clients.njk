@@ -10,46 +10,79 @@
   {% set textHighlightText = "Our client base covers governments, international and non-governmental organisations, the oil and gas, extractive and natural resources industries, manufacturing and industrial operations, luxury hotels and high net-worth<br /> individuals and families." %}
   {% include "partials/text-highlight.njk" %}
 
-  {% set cta5Title = "“The IDG International Armed Guards and Local National Unarmed Guards are an integral part of UNANA’s security policy... UNAMA has enjoyed a close working relationship with IDG and I have no hesitation in recommending IDG, its services and its management team highly for any future operations.”" %}
-  {% set cta5Text = "Chief Procurement Unit, UN Assistance Mission in Afghanistan (UNAMA)" %}
-  {% set cta5Subtitle = "Armed and unarmed security services to UN Assistance Mission in Afghanistan (UNAMA)" %}
-  {% set cta5TitleSize = "text-3xl" %}
-  {% set cta5SubtitleWeight = "font-bold" %}
-  {% set cta5TitleBG = "bg-idg-blue-light bg-fern--2--dark" %}
-  {% set cta5TitleColor = "text-idg-blue" %}
-  {% set cta5SubtitleSize = "text-base" %}
-  {% include "partials/cta-5.njk" %}
+<div class="relative pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="relative container px-12 xxl:px-0 mx-auto">
 
-  {% set cta5Title = "“The IDG International Armed Guards and Local National Unarmed Guards are an integral part of UNANA’s security policy... UNAMA has enjoyed a close working relationship with IDG and I have no hesitation in recommending IDG, its services and its management team highly for any future operations.”" %}
-  {% set cta5Text = "Chief Procurement Unit, UN Assistance Mission in Afghanistan (UNAMA)" %}
-  {% set cta5Subtitle = "Armed and unarmed security services to UN Assistance Mission in Afghanistan (UNAMA)" %}
-  {% set cta5TitleSize = "text-3xl" %}
-  {% set cta5SubtitleWeight = "font-bold" %}
-  {% set cta5TitleBG = "bg-white bg-fern--2--dark" %}
-  {% set cta5TitleColor = "text-idg-blue" %}
-  {% set cta5SubtitleSize = "text-base" %}
-  {% include "partials/cta-5.njk" %}
+    <div class="pt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
 
-  {% set cta5Title = "“IDG Security’s in-depth risk assessment revealed threats that the client was not aware of, allowing them to make safer and more profitable commercial decisions.”" %}
-  {% set cta5Text = "Name and title?" %}
-  {% set cta5Subtitle = "Security Risk Assessment (SRA) for a Telecommunications Company in Myanmar " %}
-  {% set cta5TitleSize = "text-3xl" %}
-  {% set cta5SubtitleWeight = "font-bold" %}
-  {% set cta5TitleBG = "bg-idg-blue-light bg-fern--2--dark" %}
-  {% set cta5TitleColor = "text-idg-blue" %}
-  {% set cta5SubBtn = true %}
-  {% set cta5SubtitleSize = "text-base" %}
-  {% include "partials/cta-5.njk" %}
+      {% set cardImg = "/images/client-preview.png" %}
+      {% set cardTitle = "UN Assistance Mission (UNAMA)" %}
+      {% set cardBg = "bg-idg-blue-light" %}
+      {% set cardText = "
+        <span class='text-idg-grey font-light block'>Location</span><span class='font-bold block mb-3'>Afghanistan</span>
+        <span class='text-idg-grey font-light block'>Sector</span><span class='font-bold block mb-3'>Guarding</span>
+        <span class='text-idg-grey font-light block'>What we did</span><span class='font-bold block mb-3'>Armed and unarmed security services </span>
+        <span class='text-idg-grey font-light block'>What they said</span><span class='font-bold block mb-3'>“Quote to go here”</span>
+      " %}
+      {% include 'partials/card.njk' %}
+  
+      {% set cardImg = "/images/client-preview.png" %}
+      {% set cardTitle = "UN Assistance Mission (UNAMA)" %}
+      {% set cardBg = "bg-idg-blue-light" %}
+      {% set cardText = "
+        <span class='text-idg-grey font-light block'>Location</span><span class='font-bold block mb-3'>Afghanistan</span>
+        <span class='text-idg-grey font-light block'>Sector</span><span class='font-bold block mb-3'>Guarding</span>
+        <span class='text-idg-grey font-light block'>What we did</span><span class='font-bold block mb-3'>Armed and unarmed security services </span>
+        <span class='text-idg-grey font-light block'>What they said</span><span class='font-bold block mb-3'>“Quote to go here”</span>
+      " %}
+      {% include 'partials/card.njk' %}
 
-  {% set cta5Title = "“The IDG International Armed Guards and Local National Unarmed Guards are an integral part of UNANA’s security policy... UNAMA has enjoyed a close working relationship with IDG and I have no hesitation in recommending IDG, its services and its management team highly for any future operations.”" %}
-  {% set cta5Text = "Chief Procurement Unit, UN Assistance Mission in Afghanistan (UNAMA)" %}
-  {% set cta5Subtitle = "Armed and unarmed security services to UN Assistance Mission in Afghanistan (UNAMA)" %}
-  {% set cta5TitleSize = "text-3xl" %}
-  {% set cta5SubtitleWeight = "font-bold" %}
-  {% set cta5TitleBG = "bg-white bg-fern--2--dark" %}
-  {% set cta5TitleColor = "text-idg-blue" %}
-  {% set cta5SubtitleSize = "text-base" %}
-  {% set cta5SubBtn = false %}
-  {% include "partials/cta-5.njk" %}
+      {% set cardImg = "/images/client-preview.png" %}
+      {% set cardTitle = "UN Assistance Mission (UNAMA)" %}
+      {% set cardBg = "bg-idg-blue-light" %}
+      {% set cardText = "
+        <span class='text-idg-grey font-light block'>Location</span><span class='font-bold block mb-3'>Afghanistan</span>
+        <span class='text-idg-grey font-light block'>Sector</span><span class='font-bold block mb-3'>Guarding</span>
+        <span class='text-idg-grey font-light block'>What we did</span><span class='font-bold block mb-3'>Armed and unarmed security services </span>
+        <span class='text-idg-grey font-light block'>What they said</span><span class='font-bold block mb-3'>“Quote to go here”</span>
+      " %}
+      {% include 'partials/card.njk' %}
+
+      {% set cardImg = "/images/client-preview.png" %}
+      {% set cardTitle = "UN Assistance Mission (UNAMA)" %}
+      {% set cardBg = "bg-idg-blue-light" %}
+      {% set cardText = "
+        <span class='text-idg-grey font-light block'>Location</span><span class='font-bold block mb-3'>Afghanistan</span>
+        <span class='text-idg-grey font-light block'>Sector</span><span class='font-bold block mb-3'>Guarding</span>
+        <span class='text-idg-grey font-light block'>What we did</span><span class='font-bold block mb-3'>Armed and unarmed security services </span>
+        <span class='text-idg-grey font-light block'>What they said</span><span class='font-bold block mb-3'>“Quote to go here”</span>
+      " %}
+      {% include 'partials/card.njk' %}
+
+      {% set cardImg = "/images/client-preview.png" %}
+      {% set cardTitle = "UN Assistance Mission (UNAMA)" %}
+      {% set cardBg = "bg-idg-blue-light" %}
+      {% set cardText = "
+        <span class='text-idg-grey font-light block'>Location</span><span class='font-bold block mb-3'>Afghanistan</span>
+        <span class='text-idg-grey font-light block'>Sector</span><span class='font-bold block mb-3'>Guarding</span>
+        <span class='text-idg-grey font-light block'>What we did</span><span class='font-bold block mb-3'>Armed and unarmed security services </span>
+        <span class='text-idg-grey font-light block'>What they said</span><span class='font-bold block mb-3'>“Quote to go here”</span>
+      " %}
+      {% include 'partials/card.njk' %}
+
+      {% set cardImg = "/images/client-preview.png" %}
+      {% set cardTitle = "UN Assistance Mission (UNAMA)" %}
+      {% set cardBg = "bg-idg-blue-light" %}
+      {% set cardText = "
+        <span class='text-idg-grey font-light block'>Location</span><span class='font-bold block mb-3'>Afghanistan</span>
+        <span class='text-idg-grey font-light block'>Sector</span><span class='font-bold block mb-3'>Guarding</span>
+        <span class='text-idg-grey font-light block'>What we did</span><span class='font-bold block mb-3'>Armed and unarmed security services </span>
+        <span class='text-idg-grey font-light block'>What they said</span><span class='font-bold block mb-3'>“Quote to go here”</span>
+      " %}
+      {% include 'partials/card.njk' %}
+
+    </div>
+  </div>
+</div>
 
 {% endblock %}
