@@ -1,32 +1,8 @@
 {
   "items": [
     {
-      "text": "Where we operate",
-      "url": "/where-we-operate"
-    },
-    {
-      "text": "About us",
-      "url": "/about-us"
-    },
-    {
-      "text": "Our Clients",
-      "url": "/our-clients"
-    },
-    {
-      "text": "Careers",
-      "url": "/careers"
-    },
-    {
-      "text": "Covid-19",
-      "url": "/covid-19"
-    },
-    {
-      "text": "Policies",
-      "url": "/policies"
-    },
-    {
-      "text": "Contact",
-      "url": "/contact"
+      "text": "Home",
+      "url": "/"
     }
   ]
 }

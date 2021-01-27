@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   </head>
 
-  <body class="text-idg-black bg-idg-grey-light {{ bodyClass }}">
+  <body class="{{ bodyClass }}">
 
     <div class="">
       {% include "partials/site-head.njk" %}
@@ -19,24 +19,6 @@
       </main>
       {% include "partials/site-foot.njk" %}
     </div>
-
-    <script>
-      let scrollpos = window.scrollY
-      const header = document.querySelector("#site-head")
-      const header_height = header.offsetHeight
-    
-      const add_class_on_scroll = () => header.classList.add("site-header--scolled")
-      const remove_class_on_scroll = () => header.classList.remove("site-header--scolled")
-    
-      window.addEventListener('scroll', function() { 
-        scrollpos = window.scrollY;
-    
-        if (scrollpos >= header_height) { add_class_on_scroll() }
-        else { remove_class_on_scroll() }
-    
-        console.log(scrollpos)
-      })
-    </script>
 
   </body>
 
